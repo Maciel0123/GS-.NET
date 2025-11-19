@@ -1,0 +1,12 @@
+C:\Projetos\WScore\WScoreML\bin\Debug\net9.0\WScoreML.deps.json
+C:\Projetos\WScore\WScoreML\bin\Debug\net9.0\WScoreML.dll
+C:\Projetos\WScore\WScoreML\bin\Debug\net9.0\WScoreML.pdb
+C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.csproj.AssemblyReference.cache
+C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.AssemblyInfoInputs.cache
+C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.AssemblyInfo.cs
+C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.csproj.CoreCompileInputs.cache
+C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.dll
+C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\refint\WScoreML.dll
+C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.pdb
+C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\ref\WScoreML.dll
