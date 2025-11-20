@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WScoreTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+952fe73c1f25403cc63cae3002defd8cd17bceb7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37e99bef99c60ddbc9c9ffdd45c7bb87db371ebc")]
 [assembly: System.Reflection.AssemblyProductAttribute("WScoreTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WScoreTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

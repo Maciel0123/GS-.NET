@@ -16,3 +16,21 @@ C:\Projetos\WScore\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.dll
 C:\Projetos\WScore\WScoreBusiness\obj\Debug\net9.0\refint\WScoreBusiness.dll
 C:\Projetos\WScore\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.pdb
 C:\Projetos\WScore\WScoreBusiness\obj\Debug\net9.0\ref\WScoreBusiness.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\bin\Debug\net9.0\WScoreBusiness.deps.json
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\bin\Debug\net9.0\WScoreBusiness.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\bin\Debug\net9.0\WScoreBusiness.pdb
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\bin\Debug\net9.0\WScoreDomain.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\bin\Debug\net9.0\WScoreInfrastructure.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\bin\Debug\net9.0\WScoreDomain.pdb
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\bin\Debug\net9.0\WScoreInfrastructure.pdb
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.csproj.AssemblyReference.cache
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.AssemblyInfoInputs.cache
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.AssemblyInfo.cs
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.csproj.CoreCompileInputs.cache
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.sourcelink.json
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\obj\Debug\net9.0\WScoreBu.9895C86E.Up2Date
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\obj\Debug\net9.0\refint\WScoreBusiness.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.pdb
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreBusiness\obj\Debug\net9.0\ref\WScoreBusiness.dll

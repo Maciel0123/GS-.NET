@@ -13,30 +13,70 @@ namespace WScoreInfrastructure.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // ============================
             // USER
+            // ============================
             modelBuilder.Entity<User>().ToTable("TB_USER");
             modelBuilder.Entity<User>(entity =>
             {
                 entity.HasKey(e => e.Id);
-                entity.Property(e => e.Nome).IsRequired().HasMaxLength(100);
-                entity.Property(e => e.Email).IsRequired().HasMaxLength(150);
+
+                entity.Property(e => e.Nome)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .HasColumnType("NVARCHAR2(100)");
+
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasMaxLength(150)
+                    .HasColumnType("NVARCHAR2(150)");
             });
 
+            // ============================
             // CHECKIN
+            // ============================
             modelBuilder.Entity<Checkin>().ToTable("TB_CHECKIN");
             modelBuilder.Entity<Checkin>(entity =>
             {
                 entity.HasKey(e => e.Id);
 
-                entity.Property(e => e.DataCheckin).IsRequired();
-                entity.Property(e => e.Humor).IsRequired();
-                entity.Property(e => e.Sono).IsRequired();
-                entity.Property(e => e.Foco).IsRequired();
-                entity.Property(e => e.CargaTrabalho).IsRequired();
-                entity.Property(e => e.Score).IsRequired();
+                entity.Property(e => e.DataCheckin)
+                    .IsRequired()
+                    .HasColumnType("TIMESTAMP(7)");
 
-                // Novo campo Energia
-                entity.Property(e => e.Energia).HasColumnType("NUMBER(10)");
+                entity.Property(e => e.Humor)
+                    .IsRequired()
+                    .HasColumnType("NUMBER(10)");
+
+                entity.Property(e => e.Sono)
+                    .IsRequired()
+                    .HasColumnType("NUMBER(10)");
+
+                entity.Property(e => e.Foco)
+                    .IsRequired()
+                    .HasColumnType("NUMBER(10)");
+
+                entity.Property(e => e.Score)
+                    .IsRequired()
+                    .HasColumnType("NUMBER(10)");
+
+                entity.Property(e => e.Energia)
+                    .IsRequired()
+                    .HasColumnType("NUMBER(10)");
+
+                entity.Property(e => e.CargaTrabalho)
+                    .IsRequired()
+                    .HasColumnType("NUMBER(10)");
+
+                // 🆕 NOVO CAMPO: Feedback
+                entity.Property(e => e.Feedback)
+                    .IsRequired()
+                    .HasMaxLength(500)
+                    .HasColumnType("NVARCHAR2(500)");
+
+                entity.Property(e => e.UserId)
+                    .IsRequired()
+                    .HasColumnType("RAW(16)");
 
                 entity.HasOne(e => e.User)
                     .WithMany(u => u.Checkins)

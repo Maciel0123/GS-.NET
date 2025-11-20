@@ -10,3 +10,15 @@ C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\WScoreDomain.dll
 C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\refint\WScoreDomain.dll
 C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\WScoreDomain.pdb
 C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\ref\WScoreDomain.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\bin\Debug\net9.0\WScoreDomain.deps.json
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\bin\Debug\net9.0\WScoreDomain.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\bin\Debug\net9.0\WScoreDomain.pdb
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.AssemblyInfoInputs.cache
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.AssemblyInfo.cs
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.csproj.CoreCompileInputs.cache
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.sourcelink.json
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\refint\WScoreDomain.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.pdb
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\ref\WScoreDomain.dll

@@ -46,14 +46,8 @@ namespace WScoreBusiness
 
         public Checkin Criar(Checkin c)
         {
-            decimal media =
-                (c.Humor * 0.20m) +
-                (c.Energia * 0.20m) +
-                ((10 - c.Sono) * 0.20m) + // SONO inverso
-                (c.Foco * 0.20m) +
-                ((10 - c.CargaTrabalho) * 0.20m);
-
-            c.Score = (int)(media * 100);
+            c.Score = CalcularScore(c);
+            c.Feedback = GerarFeedback(c);
 
             _context.Checkins.Add(c);
             _context.SaveChanges();
@@ -72,14 +66,8 @@ namespace WScoreBusiness
             existente.Energia = c.Energia;
             existente.CargaTrabalho = c.CargaTrabalho;
 
-            decimal media =
-                (existente.Humor * 0.20m) +
-                (existente.Energia * 0.20m) +
-                ((10 - existente.Sono) * 0.20m) + // SONO inverso
-                (existente.Foco * 0.20m) +
-                ((10 - existente.CargaTrabalho) * 0.20m);
-
-            existente.Score = (int)(media * 100);
+            existente.Score = CalcularScore(existente);
+            existente.Feedback = GerarFeedback(existente);
 
             _context.SaveChanges();
             return true;
@@ -93,6 +81,59 @@ namespace WScoreBusiness
             _context.Checkins.Remove(existente);
             _context.SaveChanges();
             return true;
+        }
+
+        // --------------------------------------------------------------------
+        // -------------------   MÉTODOS PRIVADOS NOVOS   ---------------------
+        // --------------------------------------------------------------------
+
+        private int CalcularScore(Checkin c)
+        {
+            decimal humorPeso = 0.25m;
+            decimal energiaPeso = 0.25m;
+            decimal sonoPeso = 0.30m;  
+            decimal focoPeso = 0.10m;
+            decimal cargaPeso = 0.10m;
+
+            // SONO invertido: mais sono => mais cansaço => score menor
+            decimal sonoTransformado = 10 - c.Sono;
+
+            decimal score =
+                (c.Humor * humorPeso) +
+                (c.Energia * energiaPeso) +
+                (sonoTransformado * sonoPeso) +
+                (c.Foco * focoPeso) +
+                ((10 - c.CargaTrabalho) * cargaPeso);
+
+            int finalScore = (int)(score * 10); // vai para faixa 0–1000
+
+            return Math.Clamp(finalScore, 0, 1000);
+        }
+
+        private string GerarFeedback(Checkin c)
+        {
+            List<string> alertas = new();
+
+            if (c.Sono > 7)
+                alertas.Add("Seu nível de sono está elevado. Tente priorizar pausas ou uma noite de descanso mais eficiente.");
+
+            if (c.Humor <= 4)
+                alertas.Add("Seu humor está baixo. Uma pausa curta ou alguma atividade leve pode ajudar.");
+
+            if (c.Energia <= 5)
+                alertas.Add("Seu nível de energia está reduzido. Considere hidratação ou alongamentos rápidos.");
+
+            if (c.Foco <= 4)
+                alertas.Add("Seu foco está comprometido. Talvez seja um bom momento para reorganizar prioridades.");
+
+            if (c.CargaTrabalho >= 7)
+                alertas.Add("Sua carga de trabalho está muito alta. Tente redistribuir atividades ou pedir apoio.");
+
+            // Se não houver alertas:
+            if (!alertas.Any())
+                return "Seu check-in está equilibrado! Continue mantendo esse ritmo saudável e consistente.";
+
+            return string.Join(" ", alertas);
         }
     }
 }

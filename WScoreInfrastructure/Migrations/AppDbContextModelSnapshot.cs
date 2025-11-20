@@ -37,6 +37,11 @@ namespace WScoreInfrastructure.Migrations
                     b.Property<int>("Energia")
                         .HasColumnType("NUMBER(10)");
 
+                    b.Property<string>("Feedback")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("NVARCHAR2(500)");
+
                     b.Property<int>("Foco")
                         .HasColumnType("NUMBER(10)");
 

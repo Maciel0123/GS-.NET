@@ -14,3 +14,19 @@ C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.dl
 C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\refint\WScoreInfrastructure.dll
 C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.pdb
 C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\ref\WScoreInfrastructure.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\bin\Debug\net9.0\WScoreInfrastructure.deps.json
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\bin\Debug\net9.0\WScoreInfrastructure.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\bin\Debug\net9.0\WScoreInfrastructure.pdb
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\bin\Debug\net9.0\WScoreDomain.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\bin\Debug\net9.0\WScoreDomain.pdb
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.csproj.AssemblyReference.cache
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.AssemblyInfoInputs.cache
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.AssemblyInfo.cs
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.csproj.CoreCompileInputs.cache
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.sourcelink.json
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\obj\Debug\net9.0\WScoreIn.B351DD8A.Up2Date
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\obj\Debug\net9.0\refint\WScoreInfrastructure.dll
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.pdb
+C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreInfrastructure\obj\Debug\net9.0\ref\WScoreInfrastructure.dll
