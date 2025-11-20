@@ -8,6 +8,7 @@ C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.Ge
 C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.AssemblyInfoInputs.cache
 C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.AssemblyInfo.cs
 C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.csproj.CoreCompileInputs.cache
+C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.sourcelink.json
 C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\WScoreIn.B351DD8A.Up2Date
 C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\WScoreInfrastructure.dll
 C:\Projetos\WScore\WScoreInfrastructure\obj\Debug\net9.0\refint\WScoreInfrastructure.dll

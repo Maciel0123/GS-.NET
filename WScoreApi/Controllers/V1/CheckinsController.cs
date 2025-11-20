@@ -1,111 +1,85 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Asp.Versioning;
-using WScoreInfrastructure.Data;
+using WScoreBusiness;
 using WScoreDomain.Entities;
-using WScoreApi.Helpers;
-using WScoreDomain.Common;
 
 namespace WScoreApi.Controllers.V1
 {
     [ApiController]
-    [Route("api/v{version:apiVersion}/checkins")]
-    [ApiVersion(1.0)]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [Produces("application/json")]
     public class CheckinsController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly ICheckinService _service;
 
-        public CheckinsController(AppDbContext context) => _context = context;
-
-        [HttpGet]
-        public async Task<ActionResult<ResourceWrapper<PagedResponse<Checkin>>>> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        public CheckinsController(ICheckinService service)
         {
-            if (page < 1) page = 1;
-            if (pageSize < 1) pageSize = 10;
-
-            var query = _context.Checkins.Include(c => c.User).AsNoTracking();
-            var total = await query.CountAsync();
-
-            var data = await query
-                .OrderByDescending(c => c.DataCheckin)
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .ToListAsync();
-
-            var resp = new PagedResponse<Checkin>
-            {
-                Items = data,
-                Page = page,
-                PageSize = pageSize,
-                TotalItems = total
-            };
-
-            var links = HateoasLinkBuilder.BuildPaginatedLinks(Request, page, pageSize, resp.TotalPages, "checkins").ToList();
-
-            return Ok(new ResourceWrapper<PagedResponse<Checkin>> { Data = resp, Links = links });
+            _service = service;
         }
 
-        [HttpGet("{id}", Name = "GetCheckinById")]
-        public async Task<ActionResult<ResourceWrapper<Checkin>>> GetById(Guid id)
-        {
-            var checkin = await _context.Checkins
-                .Include(c => c.User)
-                .AsNoTracking()
-                .FirstOrDefaultAsync(c => c.Id == id);
+        [HttpGet]
+        [ProducesResponseType(typeof(List<Checkin>), StatusCodes.Status200OK)]
+        public ActionResult<List<Checkin>> ListarTodos()
+            => Ok(_service.ListarTodos());
 
+        [HttpGet("paginado")]
+        [ProducesResponseType(typeof(List<Checkin>), StatusCodes.Status200OK)]
+        public ActionResult<List<Checkin>> ListarPaginado(int page = 1, int pageSize = 10)
+            => Ok(_service.ListarPaginado(page, pageSize));
+
+        [HttpGet("usuario/{userId}")]
+        [ProducesResponseType(typeof(List<Checkin>), StatusCodes.Status200OK)]
+        public ActionResult<List<Checkin>> ListarPorUsuario(Guid userId)
+            => Ok(_service.ListarPorUsuario(userId));
+
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public ActionResult<object> ObterPorId(Guid id)
+        {
+            var checkin = _service.ObterPorId(id);
             if (checkin == null) return NotFound();
 
-            var links = new List<LinkDto>
-            {
-                new("self", $"{Request.Scheme}://{Request.Host}/api/v1/checkins/{id}", "GET"),
-                new("list", $"{Request.Scheme}://{Request.Host}/api/v1/checkins?page=1&pageSize=10", "GET")
-            };
+            var self = Url.Action(nameof(ObterPorId), new { id, version = "1" });
+            var update = Url.Action(nameof(Atualizar), new { version = "1" });
+            var delete = Url.Action(nameof(Remover), new { id, version = "1" });
 
-            return Ok(new ResourceWrapper<Checkin> { Data = checkin, Links = links });
+            return Ok(new
+            {
+                data = checkin,
+                links = new[]
+                {
+                    new { rel = "self",   href = self,   method = "GET" },
+                    new { rel = "update", href = update, method = "PUT" },
+                    new { rel = "delete", href = delete, method = "DELETE" }
+                }
+            });
         }
 
         [HttpPost]
-        public async Task<ActionResult<Checkin>> Create(Checkin checkin)
+        [ProducesResponseType(typeof(Checkin), StatusCodes.Status201Created)]
+        public ActionResult<Checkin> Criar(Checkin checkin)
         {
-            // calcula score simples (ex: 0–10) * 4 * 10 => 0–400 ⇒ ajuste conforme sua regra
-            checkin.Score = (checkin.Humor + checkin.Sono + checkin.Foco + checkin.Energia) * 10;
-
-            // garante referência de usuário existente (evita INSERT indevido de User)
-            _context.Attach(new User { Id = checkin.UserId });
-
-            _context.Checkins.Add(checkin);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtRoute("GetCheckinById", new { id = checkin.Id, version = "1.0" }, checkin);
+            var criado = _service.Criar(checkin);
+            return CreatedAtAction(nameof(ObterPorId), new { id = criado.Id, version = "1" }, criado);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(Guid id, Checkin update)
+        [HttpPut]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        public IActionResult Atualizar(Checkin checkin)
         {
-            var checkin = await _context.Checkins.FindAsync(id);
-            if (checkin == null) return NotFound();
-
-            checkin.DataCheckin = update.DataCheckin;
-            checkin.Humor = update.Humor;
-            checkin.Sono = update.Sono;
-            checkin.Foco = update.Foco;
-            checkin.Energia = update.Energia;
-            checkin.CargaTrabalho = update.CargaTrabalho;
-
-            checkin.Score = (update.Humor + update.Sono + update.Foco + update.Energia) * 10;
-
-            await _context.SaveChangesAsync();
+            var atualizado = _service.Atualizar(checkin);
+            if (!atualizado) return NotFound();
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(Guid id)
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        public IActionResult Remover(Guid id)
         {
-            var checkin = await _context.Checkins.FindAsync(id);
-            if (checkin == null) return NotFound();
-
-            _context.Checkins.Remove(checkin);
-            await _context.SaveChangesAsync();
+            var removido = _service.Remover(id);
+            if (!removido) return NotFound();
             return NoContent();
         }
     }

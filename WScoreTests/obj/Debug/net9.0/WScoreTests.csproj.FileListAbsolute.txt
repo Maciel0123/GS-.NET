@@ -356,6 +356,7 @@ C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\OpenTelemetry.Api.ProviderBuilde
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\OpenTelemetry.Exporter.Console.dll
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\OpenTelemetry.Extensions.Hosting.dll
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\OpenTelemetry.Instrumentation.AspNetCore.dll
+C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\OpenTelemetry.Instrumentation.EntityFrameworkCore.dll
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\OpenTelemetry.Instrumentation.Http.dll
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\Oracle.EntityFrameworkCore.dll
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\Oracle.ManagedDataAccess.dll
@@ -464,6 +465,7 @@ C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\runtimes\linux\lib\net8.0\System
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\WScoreApi.dll
+C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\WScoreBusiness.dll
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\WScoreDomain.dll
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\WScoreInfrastructure.dll
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\WScoreML.dll
@@ -471,17 +473,17 @@ C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\WScoreApi.pdb
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\WScoreInfrastructure.pdb
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\WScoreDomain.pdb
 C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\WScoreML.pdb
+C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\WScoreBusiness.pdb
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\WScoreTests.csproj.AssemblyReference.cache
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\MvcTestingAppManifest.json
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\WScoreTests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\WScoreTests.AssemblyInfoInputs.cache
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\WScoreTests.AssemblyInfo.cs
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\WScoreTests.csproj.CoreCompileInputs.cache
+C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\WScoreTests.sourcelink.json
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\WScoreTe.3217D812.Up2Date
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\WScoreTests.dll
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\refint\WScoreTests.dll
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\WScoreTests.pdb
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\WScoreTests.genruntimeconfig.cache
 C:\Projetos\WScore\WScoreTests\obj\Debug\net9.0\ref\WScoreTests.dll
-C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
-C:\Projetos\WScore\WScoreTests\bin\Debug\net9.0\OpenTelemetry.Instrumentation.EntityFrameworkCore.dll

@@ -1,22 +1,59 @@
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using WScoreDomain.Common;
 
-namespace WScoreApi.Helpers;
-
-public static class HateoasLinkBuilder
+namespace WScoreApi.Helpers
 {
-    public static IEnumerable<LinkDto> BuildPaginatedLinks(HttpRequest req, int page, int pageSize, int totalPages, string route)
+    public static class HateoasLinkBuilder
     {
-        string Base(int p) => $"{req.Scheme}://{req.Host}/api/v1/{route}?page={p}&pageSize={pageSize}";
-        var links = new List<LinkDto>
+        // ---- LINKS DE RECURSO (GET, PUT, DELETE) ----
+        public static List<LinkDto> ResourceLinks(HttpRequest req, string route, string id)
         {
-            new("self",  Base(page), "GET"),
-            new("first", Base(1), "GET"),
-            new("last",  Base(totalPages > 0 ? totalPages : 1), "GET")
-        };
-        if (page > 1)           links.Add(new("prev", Base(page - 1), "GET"));
-        if (page < totalPages)  links.Add(new("next", Base(page + 1), "GET"));
-        return links;
+            var baseUrl = $"{req.Scheme}://{req.Host}/api/v1/{route}/{id}";
+
+            return new List<LinkDto>
+            {
+                new("self", baseUrl, "GET"),
+                new("update", baseUrl, "PUT"),
+                new("delete", baseUrl, "DELETE")
+            };
+        }
+
+        // ---- LINKS DE AÇÕES EM LISTA (POST) ----
+        public static LinkDto CreateLink(HttpRequest req, string route)
+        {
+            return new LinkDto(
+                "create",
+                $"{req.Scheme}://{req.Host}/api/v1/{route}",
+                "POST"
+            );
+        }
+
+        // ---- PAGINAÇÃO (self, first, last, prev, next) ----
+        public static IEnumerable<LinkDto> BuildPaginatedLinks(
+            HttpRequest req,
+            int page,
+            int pageSize,
+            int totalPages,
+            string route)
+        {
+            string Base(int p) =>
+                $"{req.Scheme}://{req.Host}/api/v1/{route}?page={p}&pageSize={pageSize}";
+
+            var links = new List<LinkDto>
+            {
+                new("self", Base(page), "GET"),
+                new("first", Base(1), "GET"),
+                new("last", Base(totalPages > 0 ? totalPages : 1), "GET"),
+                CreateLink(req, route) // link de POST
+            };
+
+            if (page > 1)
+                links.Add(new("prev", Base(page - 1), "GET"));
+
+            if (page < totalPages)
+                links.Add(new("next", Base(page + 1), "GET"));
+
+            return links;
+        }
     }
 }

@@ -5,6 +5,7 @@ C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\WScoreDomain.GeneratedMSBuildEd
 C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\WScoreDomain.AssemblyInfoInputs.cache
 C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\WScoreDomain.AssemblyInfo.cs
 C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\WScoreDomain.csproj.CoreCompileInputs.cache
+C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\WScoreDomain.sourcelink.json
 C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\WScoreDomain.dll
 C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\refint\WScoreDomain.dll
 C:\Projetos\WScore\WScoreDomain\obj\Debug\net9.0\WScoreDomain.pdb

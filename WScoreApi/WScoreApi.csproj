@@ -24,13 +24,13 @@
     <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\WScoreDomain\WScoreDomain.csproj" />
     <ProjectReference Include="..\WScoreInfrastructure\WScoreInfrastructure.csproj" />
     <ProjectReference Include="..\WScoreML\WScoreML.csproj" />
+    <ProjectReference Include="..\WScoreBusiness\WScoreBusiness.csproj" />
   </ItemGroup>
 
 </Project>

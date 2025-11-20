@@ -1,43 +1,50 @@
-// WScoreTests/CheckinsApiTests.cs
 using System.Net;
 using System.Net.Http.Json;
+using WScoreDomain.Entities;
 using Xunit;
 
-namespace WScoreTests;
-
-public class CheckinsApiTests : IClassFixture<CustomWebApplicationFactory>
+namespace WScoreTests
 {
-    private readonly HttpClient _client;
-
-    public CheckinsApiTests(CustomWebApplicationFactory factory)
+    public class CheckinsApiTests : IClassFixture<CustomWebApplicationFactory>
     {
-        _client = factory.CreateClient();
-    }
+        private readonly HttpClient _client;
 
-    [Fact]
-    public async Task Post_Checkin_DeveCriarScoreECadastrar()
-    {
-        // 1) cria um usuário
-        var userCreate = new { nome = "Teste", email = "t@t.com" };
-        var userResp = await _client.PostAsJsonAsync("/api/v1/users", userCreate);
-        userResp.EnsureSuccessStatusCode();
-        var user = await userResp.Content.ReadFromJsonAsync<UserReadDto>();
-
-        // 2) cria um checkin para esse usuário
-        var checkin = new
+        public CheckinsApiTests(CustomWebApplicationFactory factory)
         {
-            userId = user!.Id,
-            humor = 7,
-            sono = 6,
-            foco = 8,
-            energia = 5,
-            cargaTrabalho = 4
-        };
+            _client = factory.CreateClient();
+        }
 
-        var resp = await _client.PostAsJsonAsync("/api/v1/checkins", checkin);
+        [Fact]
+        public async Task PostCheckin_DeveCriarComScore()
+        {
+            // cria user
+            var userResp = await _client.PostAsJsonAsync("/api/v1/users", new
+            {
+                nome = "A",
+                email = "a@a.com"
+            });
 
-        Assert.Equal(HttpStatusCode.Created, resp.StatusCode);
+            var user = await userResp.Content.ReadFromJsonAsync<User>();
+
+            // cria checkin
+            var payload = new
+            {
+                userId = user!.Id,
+                humor = 7,
+                sono = 6,
+                foco = 8,
+                energia = 5,
+                cargaTrabalho = 4
+            };
+
+            var resp = await _client.PostAsJsonAsync("/api/v1/checkins", payload);
+            Assert.Equal(HttpStatusCode.Created, resp.StatusCode);
+
+            var checkin = await resp.Content.ReadFromJsonAsync<Checkin>();
+
+            Assert.NotNull(checkin);
+            Assert.True(checkin!.Score > 0);
+            Assert.Equal(user.Id, checkin.UserId);
+        }
     }
-
-    private record UserReadDto(Guid Id, string Nome, string Email);
 }

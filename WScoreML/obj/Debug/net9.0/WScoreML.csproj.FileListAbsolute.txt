@@ -6,6 +6,7 @@ C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.GeneratedMSBuildEditorConf
 C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.AssemblyInfoInputs.cache
 C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.AssemblyInfo.cs
 C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.csproj.CoreCompileInputs.cache
+C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.sourcelink.json
 C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.dll
 C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\refint\WScoreML.dll
 C:\Projetos\WScore\WScoreML\obj\Debug\net9.0\WScoreML.pdb

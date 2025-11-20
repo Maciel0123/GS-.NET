@@ -45,6 +45,7 @@ C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\OpenTelemetry.Api.ProviderBuilderE
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\OpenTelemetry.Exporter.Console.dll
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\OpenTelemetry.Extensions.Hosting.dll
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\OpenTelemetry.Instrumentation.AspNetCore.dll
+C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\OpenTelemetry.Instrumentation.EntityFrameworkCore.dll
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\OpenTelemetry.Instrumentation.Http.dll
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\Oracle.EntityFrameworkCore.dll
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\Oracle.ManagedDataAccess.dll
@@ -154,12 +155,14 @@ C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Dia
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\WScoreBusiness.dll
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\WScoreDomain.dll
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\WScoreInfrastructure.dll
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\WScoreML.dll
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\WScoreDomain.pdb
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\WScoreInfrastructure.pdb
 C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\WScoreML.pdb
+C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\WScoreBusiness.pdb
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\WScoreApi.csproj.AssemblyReference.cache
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\WScoreApi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\WScoreApi.AssemblyInfoInputs.cache
@@ -167,6 +170,7 @@ C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\WScoreApi.AssemblyInfo.cs
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\WScoreApi.csproj.CoreCompileInputs.cache
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\WScoreApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\WScoreApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\WScoreApi.sourcelink.json
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\scopedcss\bundle\WScoreApi.styles.css
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\staticwebassets.build.json
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\staticwebassets.development.json
@@ -183,5 +187,3 @@ C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\refint\WScoreApi.dll
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\WScoreApi.pdb
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\WScoreApi.genruntimeconfig.cache
 C:\Projetos\WScore\WScoreApi\obj\Debug\net9.0\ref\WScoreApi.dll
-C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
-C:\Projetos\WScore\WScoreApi\bin\Debug\net9.0\OpenTelemetry.Instrumentation.EntityFrameworkCore.dll

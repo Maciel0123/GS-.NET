@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WScoreML")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+952fe73c1f25403cc63cae3002defd8cd17bceb7")]
 [assembly: System.Reflection.AssemblyProductAttribute("WScoreML")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WScoreML")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
