@@ -5,7 +5,6 @@ namespace WScoreApi.Helpers
 {
     public static class HateoasLinkBuilder
     {
-        // ---- LINKS DE RECURSO (GET, PUT, DELETE) ----
         public static List<LinkDto> ResourceLinks(HttpRequest req, string route, string id)
         {
             var baseUrl = $"{req.Scheme}://{req.Host}/api/v1/{route}/{id}";
@@ -18,7 +17,6 @@ namespace WScoreApi.Helpers
             };
         }
 
-        // ---- LINKS DE AÇÕES EM LISTA (POST) ----
         public static LinkDto CreateLink(HttpRequest req, string route)
         {
             return new LinkDto(
@@ -28,7 +26,6 @@ namespace WScoreApi.Helpers
             );
         }
 
-        // ---- PAGINAÇÃO (self, first, last, prev, next) ----
         public static IEnumerable<LinkDto> BuildPaginatedLinks(
             HttpRequest req,
             int page,
@@ -44,7 +41,7 @@ namespace WScoreApi.Helpers
                 new("self", Base(page), "GET"),
                 new("first", Base(1), "GET"),
                 new("last", Base(totalPages > 0 ? totalPages : 1), "GET"),
-                CreateLink(req, route) // link de POST
+                CreateLink(req, route)
             };
 
             if (page > 1)

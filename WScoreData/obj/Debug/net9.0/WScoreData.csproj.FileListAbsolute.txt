@@ -1,0 +1,16 @@
+C:\Projetos\GS-.NET\WScoreData\bin\Debug\net9.0\WScoreData.deps.json
+C:\Projetos\GS-.NET\WScoreData\bin\Debug\net9.0\WScoreData.dll
+C:\Projetos\GS-.NET\WScoreData\bin\Debug\net9.0\WScoreData.pdb
+C:\Projetos\GS-.NET\WScoreData\bin\Debug\net9.0\WScoreDomain.dll
+C:\Projetos\GS-.NET\WScoreData\bin\Debug\net9.0\WScoreDomain.pdb
+C:\Projetos\GS-.NET\WScoreData\obj\Debug\net9.0\WScoreData.csproj.AssemblyReference.cache
+C:\Projetos\GS-.NET\WScoreData\obj\Debug\net9.0\WScoreData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\GS-.NET\WScoreData\obj\Debug\net9.0\WScoreData.AssemblyInfoInputs.cache
+C:\Projetos\GS-.NET\WScoreData\obj\Debug\net9.0\WScoreData.AssemblyInfo.cs
+C:\Projetos\GS-.NET\WScoreData\obj\Debug\net9.0\WScoreData.csproj.CoreCompileInputs.cache
+C:\Projetos\GS-.NET\WScoreData\obj\Debug\net9.0\WScoreData.sourcelink.json
+C:\Projetos\GS-.NET\WScoreData\obj\Debug\net9.0\WScoreData.csproj.Up2Date
+C:\Projetos\GS-.NET\WScoreData\obj\Debug\net9.0\WScoreData.dll
+C:\Projetos\GS-.NET\WScoreData\obj\Debug\net9.0\refint\WScoreData.dll
+C:\Projetos\GS-.NET\WScoreData\obj\Debug\net9.0\WScoreData.pdb
+C:\Projetos\GS-.NET\WScoreData\obj\Debug\net9.0\ref\WScoreData.dll

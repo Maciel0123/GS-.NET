@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v9.0": {
       "WScoreBusiness/1.0.0": {
         "dependencies": {
-          "WScoreDomain": "1.0.0",
-          "WScoreInfrastructure": "1.0.0"
+          "WScoreData": "1.0.0",
+          "WScoreDomain": "1.0.0"
         },
         "runtime": {
           "WScoreBusiness.dll": {}
@@ -287,15 +287,7 @@
           }
         }
       },
-      "WScoreDomain/1.0.0": {
-        "runtime": {
-          "WScoreDomain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "WScoreInfrastructure/1.0.0": {
+      "WScoreData/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
@@ -303,7 +295,15 @@
           "WScoreDomain": "1.0.0"
         },
         "runtime": {
-          "WScoreInfrastructure.dll": {
+          "WScoreData.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "WScoreDomain/1.0.0": {
+        "runtime": {
+          "WScoreDomain.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -471,12 +471,12 @@
       "path": "system.security.cryptography.protecteddata/8.0.0",
       "hashPath": "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
     },
-    "WScoreDomain/1.0.0": {
+    "WScoreData/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WScoreInfrastructure/1.0.0": {
+    "WScoreDomain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

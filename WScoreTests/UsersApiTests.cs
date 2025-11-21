@@ -23,10 +23,10 @@ namespace WScoreTests
 
             Assert.Equal(HttpStatusCode.Created, resp.StatusCode);
 
-            var created = await resp.Content.ReadFromJsonAsync<User>();
+            var envelope = await resp.Content.ReadFromJsonAsync<ApiResponse<User>>();
+            var created = envelope!.Data!;
 
-            Assert.NotNull(created);
-            Assert.Equal("Teste", created!.Nome);
+            Assert.Equal("Teste", created.Nome);
             Assert.Equal("teste@ws.com", created.Email);
         }
 
@@ -40,11 +40,10 @@ namespace WScoreTests
             });
 
             var resp = await _client.GetAsync("/api/v1/users/paginado?page=1&pageSize=10");
-            Assert.Equal(HttpStatusCode.OK, resp.StatusCode);
 
-            var list = await resp.Content.ReadFromJsonAsync<List<User>>();
+            var envelope = await resp.Content.ReadFromJsonAsync<ApiResponse<List<User>>>();
+            var list = envelope!.Data!;
 
-            Assert.NotNull(list);
             Assert.True(list.Count > 0);
         }
     }

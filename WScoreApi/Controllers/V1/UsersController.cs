@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Asp.Versioning;
 using WScoreBusiness;
 using WScoreDomain.Entities;
+using WScoreApi.Helpers;
 
 namespace WScoreApi.Controllers.V1
 {
@@ -20,13 +21,36 @@ namespace WScoreApi.Controllers.V1
 
         [HttpGet]
         [ProducesResponseType(typeof(List<User>), StatusCodes.Status200OK)]
-        public ActionResult<List<User>> ListarTodos()
-            => Ok(_service.ListarTodos());
+        public ActionResult<object> ListarTodos()
+        {
+            var lista = _service.ListarTodos();
+
+            return Ok(new
+            {
+                data = lista,
+                links = HateoasLinkBuilder.BuildPaginatedLinks(
+                    Request, 1, lista.Count, 1, "users"
+                )
+            });
+        }
 
         [HttpGet("paginado")]
         [ProducesResponseType(typeof(List<User>), StatusCodes.Status200OK)]
-        public ActionResult<List<User>> ListarPaginado(int page = 1, int pageSize = 10)
-            => Ok(_service.ListarPaginado(page, pageSize));
+        public ActionResult<object> ListarPaginado(int page = 1, int pageSize = 10)
+        {
+            var lista = _service.ListarPaginado(page, pageSize);
+            int total = _service.ListarTodos().Count;
+
+            return Ok(new
+            {
+                data = lista,
+                links = HateoasLinkBuilder.BuildPaginatedLinks(
+                    Request, page, pageSize,
+                    (int)Math.Ceiling((double)total / pageSize),
+                    "users/paginado"
+                )
+            });
+        }
 
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -36,19 +60,10 @@ namespace WScoreApi.Controllers.V1
             var user = _service.ObterPorId(id);
             if (user == null) return NotFound();
 
-            var self = Url.Action(nameof(ObterPorId), new { id, version = "1" });
-            var update = Url.Action(nameof(Atualizar), new { version = "1" });
-            var delete = Url.Action(nameof(Remover), new { id, version = "1" });
-
             return Ok(new
             {
                 data = user,
-                links = new[]
-                {
-                    new { rel = "self",   href = self,   method = "GET" },
-                    new { rel = "update", href = update, method = "PUT" },
-                    new { rel = "delete", href = delete, method = "DELETE" }
-                }
+                links = HateoasLinkBuilder.ResourceLinks(Request, "users", id.ToString())
             });
         }
 
@@ -57,7 +72,16 @@ namespace WScoreApi.Controllers.V1
         public ActionResult<User> Criar(User user)
         {
             var criado = _service.Criar(user);
-            return CreatedAtAction(nameof(ObterPorId), new { id = criado.Id, version = "1" }, criado);
+
+            return CreatedAtAction(
+                nameof(ObterPorId),
+                new { id = criado.Id, version = "1" },
+                new
+                {
+                    data = criado,
+                    links = HateoasLinkBuilder.ResourceLinks(Request, "users", criado.Id.ToString())
+                }
+            );
         }
 
         [HttpPut]

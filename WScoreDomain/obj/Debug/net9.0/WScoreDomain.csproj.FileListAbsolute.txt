@@ -22,3 +22,15 @@ C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\
 C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\refint\WScoreDomain.dll
 C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.pdb
 C:\Users\mrmmj\OneDrive\Área de Trabalho\GS-.NET\WScoreDomain\obj\Debug\net9.0\ref\WScoreDomain.dll
+C:\Projetos\GS-.NET\WScoreDomain\bin\Debug\net9.0\WScoreDomain.deps.json
+C:\Projetos\GS-.NET\WScoreDomain\bin\Debug\net9.0\WScoreDomain.dll
+C:\Projetos\GS-.NET\WScoreDomain\bin\Debug\net9.0\WScoreDomain.pdb
+C:\Projetos\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.AssemblyInfoInputs.cache
+C:\Projetos\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.AssemblyInfo.cs
+C:\Projetos\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.csproj.CoreCompileInputs.cache
+C:\Projetos\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.sourcelink.json
+C:\Projetos\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.dll
+C:\Projetos\GS-.NET\WScoreDomain\obj\Debug\net9.0\refint\WScoreDomain.dll
+C:\Projetos\GS-.NET\WScoreDomain\obj\Debug\net9.0\WScoreDomain.pdb
+C:\Projetos\GS-.NET\WScoreDomain\obj\Debug\net9.0\ref\WScoreDomain.dll

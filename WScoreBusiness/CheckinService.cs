@@ -83,10 +83,6 @@ namespace WScoreBusiness
             return true;
         }
 
-        // --------------------------------------------------------------------
-        // -------------------   MÉTODOS PRIVADOS NOVOS   ---------------------
-        // --------------------------------------------------------------------
-
         private int CalcularScore(Checkin c)
         {
             decimal humorPeso = 0.25m;
@@ -95,7 +91,6 @@ namespace WScoreBusiness
             decimal focoPeso = 0.10m;
             decimal cargaPeso = 0.10m;
 
-            // SONO invertido: mais sono => mais cansaço => score menor
             decimal sonoTransformado = 10 - c.Sono;
 
             decimal score =
@@ -105,7 +100,7 @@ namespace WScoreBusiness
                 (c.Foco * focoPeso) +
                 ((10 - c.CargaTrabalho) * cargaPeso);
 
-            int finalScore = (int)(score * 10); // vai para faixa 0–1000
+            int finalScore = (int)(score * 10); 
 
             return Math.Clamp(finalScore, 0, 1000);
         }
@@ -126,7 +121,7 @@ namespace WScoreBusiness
             if (c.Foco <= 4)
                 alertas.Add("Seu foco está comprometido. Talvez seja um bom momento para reorganizar prioridades.");
 
-            if (c.CargaTrabalho >= 7)
+            if (c.CargaTrabalho >= 10)
                 alertas.Add("Sua carga de trabalho está muito alta. Tente redistribuir atividades ou pedir apoio.");
 
             // Se não houver alertas:

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WScoreBusiness")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37e99bef99c60ddbc9c9ffdd45c7bb87db371ebc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba0a52bf12d0969e597054617d09ec08342d438c")]
 [assembly: System.Reflection.AssemblyProductAttribute("WScoreBusiness")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WScoreBusiness")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

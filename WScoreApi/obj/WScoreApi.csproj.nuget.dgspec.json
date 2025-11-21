@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreApi\\WScoreApi.csproj": {}
+    "C:\\Projetos\\GS-.NET\\WScoreApi\\WScoreApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreApi\\WScoreApi.csproj": {
+    "C:\\Projetos\\GS-.NET\\WScoreApi\\WScoreApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreApi\\WScoreApi.csproj",
+        "projectUniqueName": "C:\\Projetos\\GS-.NET\\WScoreApi\\WScoreApi.csproj",
         "projectName": "WScoreApi",
-        "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreApi\\WScoreApi.csproj",
-        "packagesPath": "C:\\Users\\mrmmj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreApi\\obj\\",
+        "projectPath": "C:\\Projetos\\GS-.NET\\WScoreApi\\WScoreApi.csproj",
+        "packagesPath": "C:\\Users\\Henrique\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\GS-.NET\\WScoreApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mrmmj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -26,17 +26,14 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj": {
-                "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj"
+              "C:\\Projetos\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj": {
+                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj"
               },
-              "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
-                "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
+              "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj": {
+                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj"
               },
-              "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj": {
-                "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj"
-              },
-              "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreML\\WScoreML.csproj": {
-                "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreML\\WScoreML.csproj"
+              "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
+                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
               }
             }
           }
@@ -51,7 +48,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -135,21 +132,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj": {
+    "C:\\Projetos\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj",
+        "projectUniqueName": "C:\\Projetos\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj",
         "projectName": "WScoreBusiness",
-        "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj",
-        "packagesPath": "C:\\Users\\mrmmj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreBusiness\\obj\\",
+        "projectPath": "C:\\Projetos\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj",
+        "packagesPath": "C:\\Users\\Henrique\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\GS-.NET\\WScoreBusiness\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mrmmj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -161,11 +158,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
-                "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
+              "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj": {
+                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj"
               },
-              "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj": {
-                "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj"
+              "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
+                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
               }
             }
           }
@@ -180,7 +177,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -201,80 +198,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
+    "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj",
-        "projectName": "WScoreDomain",
-        "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj",
-        "packagesPath": "C:\\Users\\mrmmj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\obj\\",
+        "projectUniqueName": "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj",
+        "projectName": "WScoreData",
+        "projectPath": "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj",
+        "packagesPath": "C:\\Users\\Henrique\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\GS-.NET\\WScoreData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mrmmj\\AppData\\Roaming\\NuGet\\NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net9.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
-      },
-      "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj",
-        "projectName": "WScoreInfrastructure",
-        "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj",
-        "packagesPath": "C:\\Users\\mrmmj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreInfrastructure\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\mrmmj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -286,8 +224,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
-                "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
+              "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
+                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
               }
             }
           }
@@ -302,7 +240,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -337,21 +275,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreML\\WScoreML.csproj": {
+    "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreML\\WScoreML.csproj",
-        "projectName": "WScoreML",
-        "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreML\\WScoreML.csproj",
-        "packagesPath": "C:\\Users\\mrmmj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreML\\obj\\",
+        "projectUniqueName": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj",
+        "projectName": "WScoreDomain",
+        "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj",
+        "packagesPath": "C:\\Users\\Henrique\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mrmmj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -375,17 +313,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "Microsoft.ML": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -402,7 +334,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

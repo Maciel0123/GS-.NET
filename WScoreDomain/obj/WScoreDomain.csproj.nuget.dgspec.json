@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {}
+    "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
+    "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj",
+        "projectUniqueName": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj",
         "projectName": "WScoreDomain",
-        "projectPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj",
-        "packagesPath": "C:\\Users\\mrmmj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrmmj\\OneDrive\\Área de Trabalho\\GS-.NET\\WScoreDomain\\obj\\",
+        "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj",
+        "packagesPath": "C:\\Users\\Henrique\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mrmmj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Asp.Versioning.ApiExplorer;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
@@ -10,22 +10,27 @@ namespace WScoreApi.Swagger
         {
             var apiDescription = context.ApiDescription;
 
-            // marca como deprecated se a versão estiver obsoleta
-            operation.Deprecated = apiDescription.IsDeprecated();
+            // Define parâmetros obrigatórios e descrição automática
+            if (operation.Parameters == null)
+                return;
 
-            // garante que todos os status codes documentados existam
-            foreach (var responseType in apiDescription.SupportedResponseTypes)
+            foreach (var parameter in operation.Parameters)
             {
-                var responseKey = responseType.StatusCode.ToString();
+                var description = apiDescription.ParameterDescriptions
+                    .FirstOrDefault(p => p.Name == parameter.Name);
 
-                if (!operation.Responses.ContainsKey(responseKey))
-                {
-                    operation.Responses[responseKey] = new OpenApiResponse
-                    {
-                        Description = "Resposta padrão"
-                    };
-                }
+                if (description == null)
+                    continue;
+
+                parameter.Description ??= description.ModelMetadata?.Description;
+
+                // Define se é obrigatório
+                if (parameter.Required == false)
+                    parameter.Required = description.IsRequired;
             }
+
+            // Define o texto do "summary" se vazio
+            operation.Summary ??= apiDescription.ActionDescriptor.DisplayName;
         }
     }
 }

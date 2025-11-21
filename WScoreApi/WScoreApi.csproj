@@ -28,8 +28,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WScoreDomain\WScoreDomain.csproj" />
-    <ProjectReference Include="..\WScoreInfrastructure\WScoreInfrastructure.csproj" />
-    <ProjectReference Include="..\WScoreML\WScoreML.csproj" />
+    <ProjectReference Include="..\WScoreData\WScoreData.csproj" />
     <ProjectReference Include="..\WScoreBusiness\WScoreBusiness.csproj" />
   </ItemGroup>
 
