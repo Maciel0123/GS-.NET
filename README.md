@@ -28,7 +28,7 @@ xUnit (Testes de Integração)
  ├── WScoreApi             → Controllers, Swagger, Versionamento, Observabilidade
  ├── WScoreBusiness        → Services, Regras de Negócio, Cálculo do Score
  ├── WScoreDomain          → Entidades e Objetos de Domínio
- ├── WScoreInfrastructure  → DbContext, Migrations, Persistência
+ ├── WScoreData  → DbContext, Migrations, Persistência
  ├── WScoreTests           → Testes integrados com WebApplicationFactory
 
 
@@ -167,7 +167,7 @@ dotnet restore
 
 2. Rodar as migrations
 ```
-cd WScoreInfrastructure
+cd WScoreData
 dotnet ef database update
 ```
 
