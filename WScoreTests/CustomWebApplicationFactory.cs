@@ -16,7 +16,6 @@ namespace WScoreTests
 
             builder.ConfigureServices(services =>
             {
-                // Remove DB original
                 var descriptor = services.SingleOrDefault(
                     d => d.ServiceType == typeof(DbContextOptions<AppDbContext>)
                 );
@@ -24,12 +23,10 @@ namespace WScoreTests
                 if (descriptor != null)
                     services.Remove(descriptor);
 
-                // Adiciona Banco InMemory
                 services.AddDbContext<AppDbContext>(options =>
                     options.UseInMemoryDatabase("WScoreTestsDB")
                 );
 
-                // Cria banco em memória
                 var sp = services.BuildServiceProvider();
 
                 using var scope = sp.CreateScope();

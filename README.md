@@ -45,23 +45,27 @@ Com suporte configurado para múltiplas versões no futuro (Swagger já preparad
 
 ## 📘 Endpoints Principais
 ### Checkins
-Método	Rota	Descrição
-GET	/api/v1/checkins	Lista todos com HATEOAS
-GET	/api/v1/checkins/paginado	Lista paginado
-GET	/api/v1/checkins/{id}	Busca por ID
-GET	/api/v1/checkins/usuario/{userId}	Lista checkins de um usuário (404 se não existir)
-POST	/api/v1/checkins	Cria checkin, calcula score e gera feedback
-PUT	/api/v1/checkins	Atualiza checkin
-DELETE	/api/v1/checkins/{id}	Remove checkin
+| Método | Rota                                | Descrição                                         |
+| ------ | ----------------------------------- | ------------------------------------------------- |
+| GET    | `/api/v1/checkins`                  | Lista todos com HATEOAS                           |
+| GET    | `/api/v1/checkins/paginado`         | Lista paginado                                    |
+| GET    | `/api/v1/checkins/{id}`             | Busca por ID                                      |
+| GET    | `/api/v1/checkins/usuario/{userId}` | Lista checkins de um usuário (404 se não existir) |
+| POST   | `/api/v1/checkins`                  | Cria checkin, calcula score e gera feedback       |
+| PUT    | `/api/v1/checkins`                  | Atualiza checkin                                  |
+| DELETE | `/api/v1/checkins/{id}`             | Remove checkin                                    |
+
 
 ### Users
-Método	Rota	Descrição
-GET	/api/v1/users	Lista todos
-GET	/api/v1/users/paginado	Lista paginado
-GET	/api/v1/users/{id}	Busca por ID
-POST	/api/v1/users	Cria usuário
-PUT	/api/v1/users	Atualiza usuário
-DELETE	/api/v1/users/{id}	Remove usuário
+| Método | Rota                     | Descrição        |
+| ------ | ------------------------ | ---------------- |
+| GET    | `/api/v1/users`          | Lista todos      |
+| GET    | `/api/v1/users/paginado` | Lista paginado   |
+| GET    | `/api/v1/users/{id}`     | Busca por ID     |
+| POST   | `/api/v1/users`          | Cria usuário     |
+| PUT    | `/api/v1/users`          | Atualiza usuário |
+| DELETE | `/api/v1/users/{id}`     | Remove usuário   |
+
 
 ## 🧮 Cálculo do Score
 
@@ -107,16 +111,7 @@ Criar usuário
 
 Criar checkin
 
-Garantir calculo do score
-
 Testar paginação
-
-Testar 404
-
-Infra de teste usa:
-
-UseInMemoryDatabase("WScoreTestsDB")
-
 
 Com CustomWebApplicationFactory, isolando banco e ambiente de teste.
 
@@ -166,20 +161,30 @@ TB_CHECKINS
 
 ## ▶️ Como Rodar o Projeto
 1. Restaurar pacotes
+```
 dotnet restore
+```
 
 2. Rodar as migrations
+```
 cd WScoreInfrastructure
 dotnet ef database update
+```
 
 3. Executar a API
+```
 cd WScoreApi
 dotnet run
-
+```
 
 A API iniciará em:
 ```
 https://localhost:5221
+```
+
+4. Se quiser executar os testes:
+```
+dotnet test
 ```
 
 ## 📚 Swagger

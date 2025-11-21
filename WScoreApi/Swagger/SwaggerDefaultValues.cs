@@ -10,7 +10,6 @@ namespace WScoreApi.Swagger
         {
             var apiDescription = context.ApiDescription;
 
-            // Define parâmetros obrigatórios e descrição automática
             if (operation.Parameters == null)
                 return;
 
@@ -24,12 +23,10 @@ namespace WScoreApi.Swagger
 
                 parameter.Description ??= description.ModelMetadata?.Description;
 
-                // Define se é obrigatório
                 if (parameter.Required == false)
                     parameter.Required = description.IsRequired;
             }
 
-            // Define o texto do "summary" se vazio
             operation.Summary ??= apiDescription.ActionDescriptor.DisplayName;
         }
     }

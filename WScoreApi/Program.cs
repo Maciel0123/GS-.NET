@@ -11,9 +11,6 @@ using WScoreApi.Swagger;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ===============================
-// SERILOG
-// ===============================
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .Enrich.FromLogContext()
@@ -21,9 +18,6 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
-// ===============================
-// OPEN TELEMETRY
-// ===============================
 builder.Services.AddOpenTelemetry()
     .WithTracing(t =>
     {
@@ -39,14 +33,8 @@ builder.Services.AddOpenTelemetry()
          .AddConsoleExporter();
     });
 
-// ===============================
-// CONTROLLERS
-// ===============================
 builder.Services.AddControllers();
 
-// ===============================
-// API VERSIONING
-// ===============================
 builder.Services.AddApiVersioning(o =>
 {
     o.DefaultApiVersion = new ApiVersion(1, 0);
@@ -59,9 +47,6 @@ builder.Services.AddApiVersioning(o =>
     o.SubstituteApiVersionInUrl = true;
 });
 
-// ===============================
-// SWAGGER (não carregar no Testing)
-// ===============================
 builder.Services.AddEndpointsApiExplorer();
 
 if (!builder.Environment.IsEnvironment("Testing"))
@@ -70,31 +55,19 @@ if (!builder.Environment.IsEnvironment("Testing"))
     builder.Services.ConfigureOptions<SwaggerOptionsConfig>();
 }
 
-// ===============================
-// DATABASE (Oracle) — não usar no Testing
-// ===============================
 if (!builder.Environment.IsEnvironment("Testing"))
 {
     builder.Services.AddDbContext<AppDbContext>(options =>
         options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
 }
 
-// ===============================
-// BUSINESS SERVICES
-// ===============================
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ICheckinService, CheckinService>();
 
-// ===============================
-// HEALTHCHECK
-// ===============================
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();
 
-// ===============================
-// SWAGGER (somente DEV, nunca Testing)
-// ===============================
 if (app.Environment.IsDevelopment() && !app.Environment.IsEnvironment("Testing"))
 {
     var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
@@ -109,17 +82,10 @@ if (app.Environment.IsDevelopment() && !app.Environment.IsEnvironment("Testing")
     });
 }
 
-// ===============================
-// HEALTH
-// ===============================
 app.MapHealthChecks("/health").AllowAnonymous();
 
-// ===============================
-// MAP CONTROLLERS
-// ===============================
 app.MapControllers();
 
 app.Run();
 
-// NECESSÁRIO PARA TESTES
 public partial class Program { }
