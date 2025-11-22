@@ -25,11 +25,11 @@ xUnit (Testes de Integração)
 
 ## 📂 Arquitetura
 📦 WScore
- ├── WScoreApi             → Controllers, Swagger, Versionamento, Observabilidade
- ├── WScoreBusiness        → Services, Regras de Negócio, Cálculo do Score
- ├── WScoreDomain          → Entidades e Objetos de Domínio
- ├── WScoreData  → DbContext, Migrations, Persistência
- ├── WScoreTests           → Testes integrados com WebApplicationFactory
+ ├── WScoreApi             → Controllers, Swagger, Versionamento, Observabilidade<br/>
+ ├── WScoreBusiness        → Services, Regras de Negócio, Cálculo do Score<br/>
+ ├── WScoreDomain          → Entidades e Objetos de Domínio<br/>
+ ├── WScoreInfrastructure → DbContext, Migrations, Persistência<br/>
+ ├── WScoreTests           → Testes integrados com WebApplicationFactory<br/>
 
 
 Padrão orientado a camadas, isolando responsabilidades e garantindo entregabilidade corporativa.
@@ -68,10 +68,10 @@ Com suporte configurado para múltiplas versões no futuro (Swagger já preparad
 
 ## Requisições
 
-*GET*
+#### GET
 /api/v1/Users
 
-*POST*
+#### POST
 /api/v1/Users
 ```
 {
@@ -80,7 +80,7 @@ Com suporte configurado para múltiplas versões no futuro (Swagger já preparad
 }
 ```
 
-*PUT*
+#### PUT
 /api/v1/Users
 ```
 {
@@ -89,16 +89,16 @@ Com suporte configurado para múltiplas versões no futuro (Swagger já preparad
 }
 ```
 
-*DELETE*
+#### DELETE
 /api/v1/Users/{id}
 ```
 id: 6c336df8-88f8-44ea-9475-0fe61118aed8
 ```
 
-*GET*
+#### GET
 /api/v1/Checkins
 
-*POST*
+#### POST
 /api/v1/Checkins
 ```
 {
@@ -111,7 +111,7 @@ id: 6c336df8-88f8-44ea-9475-0fe61118aed8
 }
 ```
 
-*PUT*
+#### PUT
 /api/v1/Checkins
 ```
 {
@@ -128,7 +128,7 @@ id: 6c336df8-88f8-44ea-9475-0fe61118aed8
 }
 ```
 
-*DELETE*
+#### DELETE
 /api/v1/Checkins/{id}
 ```
 id: a22f501a-baa9-4d3a-aeef-6beb80efe489
@@ -234,7 +234,7 @@ dotnet restore
 
 2. Rodar as migrations
 ```
-cd WScoreData
+cd WScoreInfrastructure
 dotnet ef database update
 ```
 
