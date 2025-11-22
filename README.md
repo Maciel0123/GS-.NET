@@ -24,7 +24,7 @@ Health Checks
 xUnit (Testes de Integração)
 
 ## 📂 Arquitetura
-📦 WScore
+📦 WScore<br/>
  ├── WScoreApi             → Controllers, Swagger, Versionamento, Observabilidade<br/>
  ├── WScoreBusiness        → Services, Regras de Negócio, Cálculo do Score<br/>
  ├── WScoreDomain          → Entidades e Objetos de Domínio<br/>
