@@ -1437,5 +1437,5 @@ C:\Projetos\GS-.NET\WScoreTests\obj\Debug\net9.0\refint\WScoreTests.dll
 C:\Projetos\GS-.NET\WScoreTests\obj\Debug\net9.0\WScoreTests.pdb
 C:\Projetos\GS-.NET\WScoreTests\obj\Debug\net9.0\WScoreTests.genruntimeconfig.cache
 C:\Projetos\GS-.NET\WScoreTests\obj\Debug\net9.0\ref\WScoreTests.dll
-C:\Projetos\GS-.NET\WScoreTests\bin\Debug\net9.0\WScoreData.dll
-C:\Projetos\GS-.NET\WScoreTests\bin\Debug\net9.0\WScoreData.pdb
+C:\Projetos\GS-.NET\WScoreTests\bin\Debug\net9.0\WScoreInfrastructure.dll
+C:\Projetos\GS-.NET\WScoreTests\bin\Debug\net9.0\WScoreInfrastructure.pdb

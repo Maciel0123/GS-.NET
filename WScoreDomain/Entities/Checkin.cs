@@ -2,7 +2,7 @@ namespace WScoreDomain.Entities
 {
     public class Checkin
     {
-        public Guid Id { get; set; } = Guid.NewGuid();
+        public Guid Id { get; set; }
         public DateTime DataCheckin { get; set; } = DateTime.UtcNow;
 
         public int Humor { get; set; }

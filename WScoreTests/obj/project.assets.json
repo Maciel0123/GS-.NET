@@ -1928,8 +1928,8 @@
           "Serilog.Sinks.Console": "6.1.1",
           "Swashbuckle.AspNetCore": "6.5.0",
           "WScoreBusiness": "1.0.0",
-          "WScoreData": "1.0.0",
-          "WScoreDomain": "1.0.0"
+          "WScoreDomain": "1.0.0",
+          "WScoreInfrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WScoreApi.dll": {}
@@ -1945,30 +1945,14 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "WScoreData": "1.0.0",
-          "WScoreDomain": "1.0.0"
+          "WScoreDomain": "1.0.0",
+          "WScoreInfrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WScoreBusiness.dll": {}
         },
         "runtime": {
           "bin/placeholder/WScoreBusiness.dll": {}
-        }
-      },
-      "WScoreData/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "9.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
-          "Oracle.EntityFrameworkCore": "9.23.60",
-          "WScoreDomain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/WScoreData.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/WScoreData.dll": {}
         }
       },
       "WScoreDomain/1.0.0": {
@@ -1979,6 +1963,22 @@
         },
         "runtime": {
           "bin/placeholder/WScoreDomain.dll": {}
+        }
+      },
+      "WScoreInfrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
+          "Oracle.EntityFrameworkCore": "9.23.60",
+          "WScoreDomain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WScoreInfrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WScoreInfrastructure.dll": {}
         }
       }
     }
@@ -4771,15 +4771,15 @@
       "path": "../WScoreBusiness/WScoreBusiness.csproj",
       "msbuildProject": "../WScoreBusiness/WScoreBusiness.csproj"
     },
-    "WScoreData/1.0.0": {
-      "type": "project",
-      "path": "../WScoreData/WScoreData.csproj",
-      "msbuildProject": "../WScoreData/WScoreData.csproj"
-    },
     "WScoreDomain/1.0.0": {
       "type": "project",
       "path": "../WScoreDomain/WScoreDomain.csproj",
       "msbuildProject": "../WScoreDomain/WScoreDomain.csproj"
+    },
+    "WScoreInfrastructure/1.0.0": {
+      "type": "project",
+      "path": "../WScoreInfrastructure/WScoreInfrastructure.csproj",
+      "msbuildProject": "../WScoreInfrastructure/WScoreInfrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4789,8 +4789,8 @@
       "Microsoft.EntityFrameworkCore.InMemory >= 9.0.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "WScoreApi >= 1.0.0",
-      "WScoreData >= 1.0.0",
       "WScoreDomain >= 1.0.0",
+      "WScoreInfrastructure >= 1.0.0",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.3",
       "xunit.runner.visualstudio >= 3.1.5"
@@ -4824,11 +4824,11 @@
             "C:\\Projetos\\GS-.NET\\WScoreApi\\WScoreApi.csproj": {
               "projectPath": "C:\\Projetos\\GS-.NET\\WScoreApi\\WScoreApi.csproj"
             },
-            "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj": {
-              "projectPath": "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj"
-            },
             "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
               "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
+            },
+            "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj": {
+              "projectPath": "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj"
             }
           }
         }

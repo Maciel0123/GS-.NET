@@ -23,8 +23,8 @@
           "Serilog.Sinks.Console": "6.1.1",
           "Swashbuckle.AspNetCore": "6.5.0",
           "WScoreBusiness": "1.0.0",
-          "WScoreData": "1.0.0",
-          "WScoreDomain": "1.0.0"
+          "WScoreDomain": "1.0.0",
+          "WScoreInfrastructure": "1.0.0"
         },
         "runtime": {
           "WScoreApi.dll": {}
@@ -1048,8 +1048,8 @@
       "System.Threading.Channels/7.0.0": {},
       "WScoreBusiness/1.0.0": {
         "dependencies": {
-          "WScoreData": "1.0.0",
-          "WScoreDomain": "1.0.0"
+          "WScoreDomain": "1.0.0",
+          "WScoreInfrastructure": "1.0.0"
         },
         "runtime": {
           "WScoreBusiness.dll": {
@@ -1058,7 +1058,15 @@
           }
         }
       },
-      "WScoreData/1.0.0": {
+      "WScoreDomain/1.0.0": {
+        "runtime": {
+          "WScoreDomain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "WScoreInfrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
@@ -1066,15 +1074,7 @@
           "WScoreDomain": "1.0.0"
         },
         "runtime": {
-          "WScoreData.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "WScoreDomain/1.0.0": {
-        "runtime": {
-          "WScoreDomain.dll": {
+          "WScoreInfrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1716,12 +1716,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "WScoreData/1.0.0": {
+    "WScoreDomain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WScoreDomain/1.0.0": {
+    "WScoreInfrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

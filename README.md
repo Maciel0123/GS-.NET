@@ -66,6 +66,73 @@ Com suporte configurado para múltiplas versões no futuro (Swagger já preparad
 | PUT    | `/api/v1/users`          | Atualiza usuário |
 | DELETE | `/api/v1/users/{id}`     | Remove usuário   |
 
+## Requisições
+
+*GET*
+/api/v1/Users
+
+*POST*
+/api/v1/Users
+```
+{
+  "nome": "Henrique",
+  "email": "henrique@example"
+}
+```
+
+*PUT*
+/api/v1/Users
+```
+{
+  "nome": "Henrique Atualizado",
+  "email": "henrique@example"
+}
+```
+
+*DELETE*
+/api/v1/Users/{id}
+```
+id: 6c336df8-88f8-44ea-9475-0fe61118aed8
+```
+
+*GET*
+/api/v1/Checkins
+
+*POST*
+/api/v1/Checkins
+```
+{
+  "humor": 0,
+  "sono": 0,
+  "foco": 0,
+  "energia": 0,
+  "cargaTrabalho": 0,
+  "userId": "6c336df8-88f8-44ea-9475-0fe61118aed8"
+}
+```
+
+*PUT*
+/api/v1/Checkins
+```
+{
+    "id": "a22f501a-baa9-4d3a-aeef-6beb80efe489",
+    "dataCheckin": "2025-11-22T17:37:39.9897928Z",
+    "humor": 10,
+    "sono": 0,
+    "foco": 10,
+    "score": 40,
+    "energia": 10,
+    "cargaTrabalho": 0,
+    "feedback": "Seu humor está baixo. Uma pausa curta ou alguma atividade leve pode ajudar. Seu nível de energia está reduzido. Considere hidratação ou alongamentos rápidos. Seu foco está comprometido. Talvez seja um bom momento para reorganizar prioridades.",
+    "userId": "6c336df8-88f8-44ea-9475-0fe61118aed8"
+}
+```
+
+*DELETE*
+/api/v1/Checkins/{id}
+```
+id: a22f501a-baa9-4d3a-aeef-6beb80efe489
+```
 
 ## 🧮 Cálculo do Score
 

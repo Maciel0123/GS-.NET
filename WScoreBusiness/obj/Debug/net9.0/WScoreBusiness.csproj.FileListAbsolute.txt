@@ -50,5 +50,5 @@ C:\Projetos\GS-.NET\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.dll
 C:\Projetos\GS-.NET\WScoreBusiness\obj\Debug\net9.0\refint\WScoreBusiness.dll
 C:\Projetos\GS-.NET\WScoreBusiness\obj\Debug\net9.0\WScoreBusiness.pdb
 C:\Projetos\GS-.NET\WScoreBusiness\obj\Debug\net9.0\ref\WScoreBusiness.dll
-C:\Projetos\GS-.NET\WScoreBusiness\bin\Debug\net9.0\WScoreData.dll
-C:\Projetos\GS-.NET\WScoreBusiness\bin\Debug\net9.0\WScoreData.pdb
+C:\Projetos\GS-.NET\WScoreBusiness\bin\Debug\net9.0\WScoreInfrastructure.dll
+C:\Projetos\GS-.NET\WScoreBusiness\bin\Debug\net9.0\WScoreInfrastructure.pdb

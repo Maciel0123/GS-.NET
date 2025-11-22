@@ -417,7 +417,17 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "WScoreData/1.0.0": {
+      "WScoreDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/WScoreDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WScoreDomain.dll": {}
+        }
+      },
+      "WScoreInfrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
@@ -427,20 +437,10 @@
           "WScoreDomain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/WScoreData.dll": {}
+          "bin/placeholder/WScoreInfrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WScoreData.dll": {}
-        }
-      },
-      "WScoreDomain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/WScoreDomain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/WScoreDomain.dll": {}
+          "bin/placeholder/WScoreInfrastructure.dll": {}
         }
       }
     }
@@ -1110,21 +1110,21 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "WScoreData/1.0.0": {
-      "type": "project",
-      "path": "../WScoreData/WScoreData.csproj",
-      "msbuildProject": "../WScoreData/WScoreData.csproj"
-    },
     "WScoreDomain/1.0.0": {
       "type": "project",
       "path": "../WScoreDomain/WScoreDomain.csproj",
       "msbuildProject": "../WScoreDomain/WScoreDomain.csproj"
+    },
+    "WScoreInfrastructure/1.0.0": {
+      "type": "project",
+      "path": "../WScoreInfrastructure/WScoreInfrastructure.csproj",
+      "msbuildProject": "../WScoreInfrastructure/WScoreInfrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "WScoreData >= 1.0.0",
-      "WScoreDomain >= 1.0.0"
+      "WScoreDomain >= 1.0.0",
+      "WScoreInfrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1152,11 +1152,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj": {
-              "projectPath": "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj"
-            },
             "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
               "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
+            },
+            "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj": {
+              "projectPath": "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj"
             }
           }
         }

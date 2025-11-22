@@ -29,11 +29,11 @@
               "C:\\Projetos\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj": {
                 "projectPath": "C:\\Projetos\\GS-.NET\\WScoreBusiness\\WScoreBusiness.csproj"
               },
-              "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj": {
-                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj"
-              },
               "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
                 "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
+              },
+              "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj": {
+                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj"
               }
             }
           }
@@ -158,11 +158,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj": {
-                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj"
+              "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
+                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
               },
-              "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
-                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
+              "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj": {
+                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj"
               }
             }
           }
@@ -182,83 +182,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj",
-        "projectName": "WScoreData",
-        "projectPath": "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj",
-        "packagesPath": "C:\\Users\\Henrique\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\GS-.NET\\WScoreData\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net9.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
-            "projectReferences": {
-              "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
-                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Oracle.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.23.60, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -338,6 +261,83 @@
         }
       }
     },
+    "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj",
+        "projectName": "WScoreInfrastructure",
+        "projectPath": "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj",
+        "packagesPath": "C:\\Users\\Henrique\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
+                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.23.60, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Projetos\\GS-.NET\\WScoreTests\\WScoreTests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -363,11 +363,11 @@
               "C:\\Projetos\\GS-.NET\\WScoreApi\\WScoreApi.csproj": {
                 "projectPath": "C:\\Projetos\\GS-.NET\\WScoreApi\\WScoreApi.csproj"
               },
-              "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj": {
-                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreData\\WScoreData.csproj"
-              },
               "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj": {
                 "projectPath": "C:\\Projetos\\GS-.NET\\WScoreDomain\\WScoreDomain.csproj"
+              },
+              "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj": {
+                "projectPath": "C:\\Projetos\\GS-.NET\\WScoreInfrastructure\\WScoreInfrastructure.csproj"
               }
             }
           }

@@ -537,5 +537,5 @@ C:\Projetos\GS-.NET\WScoreApi\obj\Debug\net9.0\refint\WScoreApi.dll
 C:\Projetos\GS-.NET\WScoreApi\obj\Debug\net9.0\WScoreApi.pdb
 C:\Projetos\GS-.NET\WScoreApi\obj\Debug\net9.0\WScoreApi.genruntimeconfig.cache
 C:\Projetos\GS-.NET\WScoreApi\obj\Debug\net9.0\ref\WScoreApi.dll
-C:\Projetos\GS-.NET\WScoreApi\bin\Debug\net9.0\WScoreData.dll
-C:\Projetos\GS-.NET\WScoreApi\bin\Debug\net9.0\WScoreData.pdb
+C:\Projetos\GS-.NET\WScoreApi\bin\Debug\net9.0\WScoreInfrastructure.dll
+C:\Projetos\GS-.NET\WScoreApi\bin\Debug\net9.0\WScoreInfrastructure.pdb

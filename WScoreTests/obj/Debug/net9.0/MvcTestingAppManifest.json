@@ -1,6 +1,6 @@
 {
   "WScoreApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projetos\\GS-.NET\\WScoreApi",
   "WScoreBusiness, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projetos\\GS-.NET\\WScoreBusiness",
-  "WScoreData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projetos\\GS-.NET\\WScoreData",
-  "WScoreDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projetos\\GS-.NET\\WScoreDomain"
+  "WScoreDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projetos\\GS-.NET\\WScoreDomain",
+  "WScoreInfrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projetos\\GS-.NET\\WScoreInfrastructure"
 }

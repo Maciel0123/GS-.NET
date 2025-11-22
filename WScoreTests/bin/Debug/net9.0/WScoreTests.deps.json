@@ -42,8 +42,8 @@
           "Microsoft.EntityFrameworkCore.InMemory": "9.0.0",
           "Microsoft.NET.Test.Sdk": "17.12.0",
           "WScoreApi": "1.0.0",
-          "WScoreData": "1.0.0",
           "WScoreDomain": "1.0.0",
+          "WScoreInfrastructure": "1.0.0",
           "coverlet.collector": "6.0.2",
           "xunit": "2.9.3",
           "xunit.runner.visualstudio": "3.1.5",
@@ -1601,8 +1601,8 @@
           "Serilog.Sinks.Console": "6.1.1",
           "Swashbuckle.AspNetCore": "6.5.0",
           "WScoreBusiness": "1.0.0",
-          "WScoreData": "1.0.0",
-          "WScoreDomain": "1.0.0"
+          "WScoreDomain": "1.0.0",
+          "WScoreInfrastructure": "1.0.0"
         },
         "runtime": {
           "WScoreApi.dll": {
@@ -1616,8 +1616,8 @@
       },
       "WScoreBusiness/1.0.0": {
         "dependencies": {
-          "WScoreData": "1.0.0",
-          "WScoreDomain": "1.0.0"
+          "WScoreDomain": "1.0.0",
+          "WScoreInfrastructure": "1.0.0"
         },
         "runtime": {
           "WScoreBusiness.dll": {
@@ -1629,23 +1629,6 @@
           "WScoreBusiness.dll": {}
         }
       },
-      "WScoreData/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "9.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
-          "Oracle.EntityFrameworkCore": "9.23.60",
-          "WScoreDomain": "1.0.0"
-        },
-        "runtime": {
-          "WScoreData.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        },
-        "compile": {
-          "WScoreData.dll": {}
-        }
-      },
       "WScoreDomain/1.0.0": {
         "runtime": {
           "WScoreDomain.dll": {
@@ -1655,6 +1638,23 @@
         },
         "compile": {
           "WScoreDomain.dll": {}
+        }
+      },
+      "WScoreInfrastructure/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
+          "Oracle.EntityFrameworkCore": "9.23.60",
+          "WScoreDomain": "1.0.0"
+        },
+        "runtime": {
+          "WScoreInfrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "WScoreInfrastructure.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/9.0.0.0": {
@@ -4146,12 +4146,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "WScoreData/1.0.0": {
+    "WScoreDomain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WScoreDomain/1.0.0": {
+    "WScoreInfrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
